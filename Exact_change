@@ -1,0 +1,50 @@
+mon_in = int(input())
+
+if mon_in <= 0: 
+    print('No change')
+
+numD = mon_in // 100
+mon_in = mon_in - (numD * 100)
+
+numQ = mon_in // 25
+mon_in = mon_in - (numQ * 25)
+
+numDi = mon_in // 10
+mon_in = mon_in - (numDi * 10)
+
+
+numN = mon_in // 5 
+mon_in = mon_in - (numN * 5)
+
+numP = mon_in 
+
+if numD > 0:
+    print(numD, end=' ')
+    if numD == 1: 
+        print('Dollar')
+    else: 
+        print('Dollars')
+if numQ > 0:
+    print(numQ, end=' ')
+    if numQ == 1:
+        print('Quarter')
+    else:
+        print('Quarters')
+if numDi > 0:
+    print(numDi, end=' ')
+    if numDi == 1: 
+        print('Dime')
+    else:
+        print('Dimes') 
+if numN > 0: 
+    print(numN, end=' ')
+    if numN == 1:
+        print('Nickel')
+    else:
+        print('Nickles')
+if numP > 0:
+    print(numP, end=' ')
+    if numP == 1: 
+        print('Penny')
+    else:
+        print('Pennies') 
